@@ -73,6 +73,12 @@
             ex:expression=".availability" 
             ex:facetLabel="Availability"></div>
 
+<div ex:role="facet" ex:expression=".authors" 
+            ex:facetLabel="Authors"></div>
+
+<div ex:role="facet" ex:expression=".theme" 
+            ex:facetLabel="Theme"></div>
+
 <div ex:role="facet" 
             ex:expression=".type" 
             ex:facetLabel="Type"></div>
@@ -80,11 +86,7 @@
 <div ex:role="facet" ex:expression=".platform" 
             ex:facetLabel="Platform"></div>
 
-<div ex:role="facet" ex:expression=".theme" 
-            ex:facetLabel="Theme"></div>
 
-<div ex:role="facet" ex:expression=".authors" 
-            ex:facetLabel="Authors"></div>
         </div>
 
 
@@ -106,7 +108,7 @@
                 <h2><a ex:href-content=".homepage"><span ex:content=".title"></span></a></h2>
                 <p ex:content=".description"></p>
 
-                <p><span ex:content=".authors"></span>
+                <p><strong><span ex:content=".authors"></strong></span><br />
                 <span ex:content=".date"></span></p>
               </div>
 
