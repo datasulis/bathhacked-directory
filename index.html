@@ -105,11 +105,23 @@
                 ex:showControls="false">
 
               <div ex:role="lens" class="hack-thumbnail" style="display: none;">
-                <h2><a ex:href-content=".homepage"><span ex:content=".title"></span></a></h2>
-                <p ex:content=".description"></p>
 
-                <p><strong><span ex:content=".authors"></strong></span><br />
-                <span ex:content=".date"></span></p>
+                <h2><span ex:content=".title"></span></h2>
+                <p><em><span ex:content=".authors"></em></span></p>
+
+                <p class="lead" ex:content=".description"></p>
+
+                <p>
+                <span ex:if-exists=".homepage">
+                  <a ex:href-content=".homepage">Homepage</a>
+                  <span ex:if-exists=".blogpost"> | </span>
+                </span>
+                <span ex:if-exists=".blogpost">
+                  <a ex:href-content=".blogpost">Read more</a>
+                </span>
+                </p>
+
+                <p>Created: <span ex:content=".date"></span></p>
               </div>
 
             </div>
